@@ -1,0 +1,14 @@
+create database course_mangement;
+USE course_management;
+
+CREATE TABLE user (
+  email VARCHAR(255) PRIMARY KEY,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE course (
+  cid INT AUTO_INCREMENT PRIMARY KEY,
+  cname VARCHAR(255) NOT NULL,
+  fees DECIMAL(10, 2) NOT NULL,
+  duration INT NOT NULL
+);
